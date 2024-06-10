@@ -1,0 +1,83 @@
+body {
+  background: radial-gradient(
+      circle at -8.9% 51.2%,
+      rgb(255, 124, 0) 0%,
+      rgb(255, 124, 0) 15.9%,
+      rgb(255, 163, 77) 15.9%,
+      rgb(255, 163, 77) 24.4%,
+      rgb(21, 70, 100) 24.5%,
+      rgb(19, 30, 37) 66%
+    )
+    fixed;
+  font-family: "Franklin Gothic Medium";
+}
+main {
+  margin-left: 20%;
+  max-width: 600px;
+}
+
+h1 {
+  margin-left: 20%;
+  color: #ffebbb;
+  font-size: 50px;
+}
+
+form {
+  background: #ffcab0;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgb(255, 163, 77);
+  width: 80%;
+  border-radius: 50px;
+  line-height: 20px;
+  color: rgb(21, 70, 100);
+}
+
+.submit {
+  margin-left: 10px;
+  background: rgb(21, 70, 100);
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  width: 150px;
+  padding: 14px 24px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.74);
+}
+
+.nameList {
+  color: rgb(255, 163, 77);
+  font-size: 20px;
+  background-color: #ffffff56;
+  padding: 10px 20px;
+  margin: 30px 0px;
+  border-left: 5px solid #ffcab0;
+  border-radius: 0px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  line-height: 30px;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #efddb2;
+  font-size: 16px;
+  margin-left: 20%;
+}
+
+a:link {
+  color: #ffebbb;
+}
+
+a:visited {
+  color: #ffcab0;
+}
