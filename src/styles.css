@@ -58,12 +58,11 @@ form {
   margin: 30px 0px;
   border-left: 5px solid #ffcab0;
   border-radius: 0px;
-}
-
-ul {
-  list-style: none;
   margin-left: 0px;
   padding-left: 0px;
+}
+ul {
+  list-style: none;
   line-height: 30px;
 }
 
