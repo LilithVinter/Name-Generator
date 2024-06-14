@@ -13,18 +13,22 @@
       <h1>Name Generator</h1>
     </header>
     <main>
-      <form id="name-generator-form">
-        <input
-          type="text"
-          placeholder="Enter keywords"
-          autofocus
-          required
-          class="instructions"
-          id="user-instructions"
-        />
-        <input type="submit" class="submit" />
-      </form>
-      <div class="nameList" id="nameList"></div>
+      <div class="form-container">
+        <form id="name-generator-form">
+          <input
+            type="text"
+            placeholder="Enter keywords related to the name suggestions"
+            autofocus
+            required
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit" value="Generate" />
+        </form>
+        <div class="hint">eg. Floral, Night, Fantasy</div>
+      </div>
+
+      <div class="nameList hidden" id="nameList"></div>
     </main>
 
     <footer>

@@ -22,13 +22,23 @@ h1 {
   font-size: 50px;
 }
 
-form {
+.form-container {
   background: #ffcab0;
   border-radius: 10px;
   padding: 20px;
+}
+
+form {
+  max-width: 600px;
   display: flex;
 }
 
+.hint {
+  color: rgba(13, 41, 58, 0.603);
+  padding: 5px 20px;
+  font-size: 14px;
+  margin-top: 5px;
+}
 .instructions {
   padding: 16px;
   border: 1px solid rgb(255, 163, 77);
@@ -36,6 +46,10 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: rgb(21, 70, 100);
+  background: #ffffffcc;
+}
+.instructions:hover {
+  background-color: #ffebbb;
 }
 
 .submit {
@@ -61,10 +75,12 @@ form {
   padding: 20px;
   margin: 30px 0px;
   border-left: 5px solid #ffcab0;
-  border-radius: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
 }
+
+.hidden {
+  display: none;
+}
+
 ul {
   list-style: none;
   margin-bottom: 0;
@@ -84,4 +100,40 @@ a:link {
 
 a:visited {
   color: #ffcab0;
+}
+
+/* class="loader" for loading animation*/
+.loader {
+  width: 60px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  animation: l3-0 1s infinite alternate;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  width: 16px;
+  background: rgb(255, 124, 0);
+  animation: l3-1 0.5s infinite alternate;
+}
+.loader:after {
+  background: rgb(255, 163, 77);
+  --s: -1;
+}
+@keyframes l3-0 {
+  0%,
+  40% {
+    transform: rotate(0);
+  }
+  80%,
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+@keyframes l3-1 {
+  80%,
+  100% {
+    transform: translate(calc(var(--s, 1) * 14px));
+  }
 }
